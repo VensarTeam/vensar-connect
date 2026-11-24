@@ -10,10 +10,26 @@
   padding: clamp(14px, 2.2vw, 28px);
   overflow: clip;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 8% 8%, #ede7de 0, transparent 32%),
-    radial-gradient(circle at 94% 86%, #e4ebf1 0, transparent 34%),
-    #f3f4f2;
+  background: #dce4e9;
+}
+
+.login-page::before,
+.login-page::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-page::before {
+  background: url('./assets/vensar-office.webp') center 52% / cover no-repeat;
+  filter: blur(4px) saturate(.72) brightness(1.06);
+  transform: scale(1.025);
+}
+
+.login-page::after {
+  background: linear-gradient(115deg, #e8eef3b0, #f0f3f4a3 48%, #dce8f0a6);
 }
 
 .login-shell {
@@ -21,12 +37,16 @@
   z-index: 1;
   display: flex;
   align-items: stretch;
-  width: min(1200px, 100%);
+  width: min(1160px, 100%);
   overflow: hidden;
-  border: 1px solid #ffffffe3;
+  border: 1px solid #ffffffd9;
   border-radius: 24px;
   background: #fff;
-  box-shadow: 0 24px 68px #30343b14, 0 5px 18px #30343b09;
+  box-shadow: 0 36px 90px #1f334d30, 0 8px 26px #1f334d12;
+}
+
+@media (min-width: 921px) {
+  .login-shell { min-height: min(640px, calc(100svh - 56px)); }
 }
 
 .brand-panel {

@@ -184,7 +184,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: reduceMotion ? 0 : 0.7, delay: reduceMotion ? 0 : 0.12 }}
             >
-              <p className="brand-eyebrow"><span /> ONE SPACE FOR EVERY TEAM</p>
+              <p className="brand-eyebrow"><span /> ONE SPACE FOR MANAGEMENT</p>
               <h1>Every project,<br /><em>connected.</em></h1>
               <p className="brand-description">A shared place for the people, projects and decisions that keep Vensar moving.</p>
             </motion.div>
@@ -213,7 +213,7 @@ function App() {
                 <motion.div key="credentials" className="step-content" {...entrance}>
                   <div className="access-heading">
                     <span className="heading-kicker">WELCOME TO VENSAR CONNECT</span>
-                    <h2>Good to have you back.</h2>
+                    <h2>Welcome back.</h2>
                   </div>
 
                   <form className="auth-form" onSubmit={handleCredentials} noValidate>
