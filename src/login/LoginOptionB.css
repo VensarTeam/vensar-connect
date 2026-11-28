@@ -1,0 +1,119 @@
+.login-page--option-b {
+  background: #dfe6e4;
+}
+
+.login-page--option-b .login-backdrop-slide {
+  filter: saturate(.9) contrast(1.06);
+}
+
+.login-page--option-b .login-backdrop-wash {
+  background: linear-gradient(108deg, #eee9dd72, #d6e4e863 58%, #e6d8c43d);
+}
+
+.login-page--option-b .login-shell {
+  flex-direction: row-reverse;
+  width: min(1120px, 100%);
+  border-color: #ffffffd6;
+  border-radius: 30px;
+  box-shadow: 0 34px 90px #14334850, 0 10px 30px #274f632b;
+}
+
+.login-page--option-b .brand-panel {
+  flex: 1.04 1 0;
+  color: #f7f8f4;
+  background: linear-gradient(145deg, #153249d9, #244659aa 46%, #173448d0);
+  backdrop-filter: blur(1px) saturate(.9);
+  -webkit-backdrop-filter: blur(1px) saturate(.9);
+}
+
+.login-page--option-b .brand-panel::after {
+  background: radial-gradient(circle at 80% 18%, #f3d8ac38, transparent 42%),
+    linear-gradient(0deg, #122a3a75, transparent 48%);
+}
+
+.login-page--option-b .brand-content {
+  padding: clamp(34px, 4.2vw, 56px);
+}
+
+.login-page--option-b .brand-header {
+  flex-wrap: wrap;
+}
+
+.login-page--option-b .brand-logo-frame {
+  padding: 7px 11px;
+  border: 1px solid #ffffffb0;
+  border-radius: 12px;
+  background: #fffdf4e8;
+  box-shadow: 0 8px 22px #0d2d4040;
+}
+
+.login-page--option-b .brand-logo-frame img {
+  width: 150px;
+}
+
+.login-page--option-b .brand-one {
+  padding-left: 12px;
+  border-left-color: #ffffff75;
+  color: #f9f7f0;
+}
+
+.login-page--option-b .brand-one .connection-links path {
+  stroke: #e3edf0;
+}
+
+.login-page--option-b .brand-slide-dot { background: #f7f7f37d; }
+.login-page--option-b .brand-slide-dot.is-active { background: #f2cfaa; }
+.login-page--option-b .brand-eyebrow { color: #e1ebea; }
+.login-page--option-b .brand-eyebrow span { background: #f2cfaa; }
+
+.login-page--option-b .brand-message h1 {
+  color: #fffefa;
+  font-size: clamp(39px, 3.2vw, 54px);
+}
+
+.login-page--option-b .brand-message h1 em { color: #f4d7b6; }
+.login-page--option-b .brand-description { color: #e4eceb; }
+.login-page--option-b .project-chain { border-top-color: #ffffff63; }
+.login-page--option-b .chain-item { color: #e2ecef; }
+.login-page--option-b .chain-node { color: #24475e; background: #fffffff0; }
+.login-page--option-b .chain-item-hub { color: #f4d7b6; }
+
+.login-page--option-b .access-panel {
+  flex: .96 1 0;
+  border-left: 0;
+  border-right: 1px solid #ffffffc7;
+  background: linear-gradient(148deg, #fffdf3ed, #f5f4eee2 52%, #e4eef0d9);
+  backdrop-filter: blur(20px) saturate(1.06);
+  -webkit-backdrop-filter: blur(20px) saturate(1.06);
+  box-shadow: inset 1px 1px 0 #fff, 10px 0 28px #13354b1c;
+}
+
+.login-page--option-b .access-content {
+  padding-inline: clamp(36px, 4.4vw, 60px);
+}
+
+.login-page--option-b .access-badge,
+.login-page--option-b .step-indicator { color: #657887; }
+.login-page--option-b .access-heading h2 { color: #253f52; }
+.login-page--option-b .field-group label { color: #3c5364; }
+.login-page--option-b .input-wrap { background: #ffffffdf; border-color: #d7e1e3; }
+.login-page--option-b .input-wrap:focus-within { border-color: #6a8ca4; box-shadow: 0 0 0 4px #6a8ca422; }
+.login-page--option-b .access-footer { padding-inline: clamp(36px, 4.4vw, 60px); background: #f6f8f4a3; }
+
+@media (max-width: 920px) {
+  .login-page--option-b .login-shell { flex-direction: column; }
+  .login-page--option-b .brand-panel,
+  .login-page--option-b .access-panel { flex: none; }
+  .login-page--option-b .brand-content { padding: 26px 34px; }
+  .login-page--option-b .access-panel { border-right: 0; border-top: 1px solid #ffffffb0; }
+}
+
+@media (max-width: 560px) {
+  .login-page--option-b .login-shell { border-radius: 21px; }
+  .login-page--option-b .brand-content { padding: 17px 21px; }
+  .login-page--option-b .brand-logo-frame { padding: 5px 8px; border-radius: 9px; }
+  .login-page--option-b .brand-logo-frame img { width: 118px; }
+  .login-page--option-b .brand-one { font-size: 12px; }
+  .login-page--option-b .access-content { padding-inline: 24px; }
+  .login-page--option-b .access-footer { padding-inline: 24px; }
+}
